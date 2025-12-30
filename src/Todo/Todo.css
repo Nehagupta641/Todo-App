@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.SimpleTodo {
+  background-image: url("../public/todo.jpg");
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header{
+
+  display: flex;
+  align-items: center;
+   justify-content: space-around;
+}
+.containertodo {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  /* max-width: 350px; */
+  /* width: 90%; */
+  margin: auto;
+}
+
+.header {
+  margin-bottom: 20px;
+}
+
+.input_area {
+  display: flex;
+  margin-bottom: 20px;
+  gap: 4px;
+}
+
+.input_area input {
+  flex-grow: 1;
+  padding: 10px;
+  border: 1px solid grey;
+  border-radius: 5px 0 0 5px;
+}
+
+.add-btn {
+  background-color: rgb(39, 157, 53);
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 20px;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+}
+
+.task {
+  background-color: rgb(245, 242, 220);
+  padding: 12px 15px;
+  margin-bottom: 8px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.task:hover {
+  background-color: beige;
+  border-left: 5px solid red;
+  cursor: pointer;
+}
+
+/* .done {
+  background-color: beige;
+  border-left: 5px solid red;
+} */
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10px;
+  border-top: 1px solid grey;
+}
+.footer p {
+  color: black;
+}
+.clear-btn {
+  background-color: rgb(29, 120, 61);
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.delete-btn {
+  color: rgb(255, 255, 255);
+  /* border-color: red; */
+  background: red;
+  display: none;
+  border: 1px solid rgb(173, 172, 172);
+  padding: 8px;
+  border-radius: 100%;
+}
+.task:hover .delete-btn {
+  display: block;
+  cursor: pointer;
+  /* border-color: red; */
+}
+
